@@ -13,162 +13,67 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital@1&display=swap" rel="stylesheet">
-    <style>
-        html {
-            background: url(layered-waves-haikei.svg) no-repeat center center fixed;
-            -webkit-background-size: cover;
-            -moz-background-size: cover;
-            -o-background-size: cover;
-            background-size: cover;
-            height: 550px;
-            width: 100%;
-            }
-        @font-face {
-            font-family: 'Hobo Std';
-            src: url("https://github.com/AidanG1/snackRice/blob/6b3dbdae63ee387a98c40c930a2b3018c792d26f/templates/staticSite/HoboStd.otf") format("opentype");
-        }
-
-        .header {
-            background: linear-gradient(to bottom right, rgba(248, 173, 158), rgba(255, 243, 191));
-            padding: 72px;
-            margin: -10px;
-        }
-
-        @media (min-width: 900px) {
-            .logo {
-                position: absolute;
-                right: 5vw;
-                top: -2vw;
-                max-width: 30vw;
-            }
-            
-            h3 {
-                color: rgba(102, 0, 0);
-                font-size: 400%;
-                padding-left: 72px;
-                margin: 0px;
-                font-family: 'Raleway', sans-serif;
-                overflow: hidden;
-                text-align: left;
-            }
-            
-            h4 {
-                color: rgba(74, 3, 0);
-                font-size: 600%;
-                padding-left: 72px;
-                margin: 0px;
-                overflow: hidden;
-                font-family: 'Hobo Std';
-                text-align: left;
-            }
-            
-            h5 {
-                color: rgba(102, 0, 0);
-                font-size: 300%;
-                padding-left: 72px;
-                margin: 0px;
-                overflow: hidden;
-                text-align: left;
-                font-family: 'Raleway', sans-serif;
-            }
-        }
-
-        @media (max-width: 899px) {
-            .logo {
-                position: relative;
-                max-width: 100%;
-                height: auto;
-            }
-            
-            h3 {
-                color: rgba(102, 0, 0);
-                font-size: 10vw;
-                padding-left: 72px;
-                margin: 0px;
-                font-family: 'Raleway', sans-serif;
-                overflow: hidden;
-                text-align: center;
-            }
-            
-            h4 {
-                color: rgba(74, 3, 0);
-                font-size: 20vw;
-                padding-left: 72px;
-                margin: 0px;
-                overflow: hidden;
-                font-family: 'Hobo Std';
-                text-align: center;
-            }
-            h5 {
-                color: rgba(102, 0, 0);
-                font-size: 4vw;
-                padding-left: 72px;
-                margin: 0px;
-                overflow: hidden;
-                text-align: center;
-                font-family: 'Raleway', sans-serif;
-            }
-        }
-
-
-        h1 {
-            color: whitesmoke;
-        }
-        h2 {
-            color: whitesmoke;
-        }
-        div {
-            justify-content: center;
-            text-align: center;
-            margin: auto;
-        }
-        .container {
-            position: relative;
-            overflow: hidden;
-            width: 100%;
-            padding-top: 56.25%; /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
-        }
-        .responsive-iframe {
-            position: absolute;
-            top: 0;
-            left: 0;
-            bottom: 0;
-            right: 0;
-            width: 100%;
-            height: 100%;
-        }
-        /* .gallery {
-            display: grid;
-            grid-column-gap: 0px;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-        }
-        .box {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            display: block;
-        } */
-    </style>
+    <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/svg" sizes="32x32" href="Icon.svg">
 </head>
-<body>
-    <div>
+   <body>
+      <div>
         <header class = "header">
-            <img class = "logo" alt="mascot" src="https://raw.githubusercontent.com/AidanG1/snackRice/master/main/static/image/images/Icon.svg" style="width: 95vw; height: auto">
-            <h3>Welcome to</h3>
-            <h4>Snack Rice</h4>
-            <h5>A Rice University servery finder,<br>customized for your needs!</h5>
+          <img class = "logo" alt="mascot" src="https://raw.githubusercontent.com/AidanG1/snackRice/master/main/static/image/images/Icon.svg" style="width: 95vw; height: auto">
+          <h3>Welcome to</h3>
+          <h4>Snack Rice</h4>
+          <h5>A Rice University servery finder,<br>customized for your needs!</h5>
         </header>
-        <h1>Snack Rice is a Hack Rice 11 Project</h1>
-        <h2>Created by Aidan Gerber, Ian Rundle, Karl Hernandez, and Phoebe Scaccia</h2>
-        <h2><a href="https://github.com/AidanG1/snackRice" target="_blank">View the code on Github</a></h2>
-        <div class="container">
+        <div class="gallery">
+            <a href="https://dining.rice.edu/seibel-servery">
+              <div class = "box">
+                <img src='https://dining.rice.edu/sites/g/files/bxs4236/files/styles/page_hero_image/public/2019-12/seibel-servery.jpg.jpeg?itok=6v_-ngCG'>
+                <div class='centered'>Siebel Servery</div>
+              </div>
+          </a>
+          <a href="https://dining.rice.edu/west-servery">
+           <div class="box">
+             <img src='https://dining.rice.edu/sites/g/files/bxs4236/files/styles/page_hero_image/public/2019-12/west-servery_0.jpg.jpeg?itok=JC0x_3bt'>
+             <div class='centered'>West Servery</div>
+            </div>
+          </a>
+          <a href="https://dining.rice.edu/baker-college-kitchen">
+           <div class="box">
+            <img src='https://dining.rice.edu/sites/g/files/bxs4236/files/styles/page_hero_image/public/2019-12/baker-servery.jpg.jpeg?itok=afyfCZPr'>
+             <div class='centered'>Baker College Kitchen</div>
+            </div>
+          </a>
+          <a href="https://dining.rice.edu/south-servery">
+            <div class="box">
+              <img src='https://dining.rice.edu/sites/g/files/bxs4236/files/styles/page_hero_image/public/2019-12/south-servery.jpg.jpeg?itok=JVeTEsgf'>
+              <div class = "centered">South Servery</div>
+            </div>
+          </a>
+          <a href="https://dining.rice.edu/north-servery">
+            <div class="box">
+              <img src='https://dining.rice.edu/sites/g/files/bxs4236/files/styles/page_hero_image/public/2020-08/Rice-Brown-College_0.jpg.jpeg?itok=0YsxigYZ'>
+              <div class="centered">North Servery</div>
+             </div>
+          </a>
+          <a href="https://dining.rice.edu">
+            <div class="box">
+              <img src='https://cdn2.communityimpact.com/?url=https://communityimpact.com/uploads/images/2021/03/30/120887.jpg&w=900&q=100&f=jpg'>
+              <div class="centered">Rice Dining</div>
+            </div>
+          </a>
+         </div>
+        <header class = 'bodycontainer'>
+         <h1>Snack Rice is a Hack Rice 11 Project</h1>
+         <h2>Created by Aidan Gerber, Ian Rundle, Karl Hernandez, and Phoebe Scaccia</h2>
+         <h2><a href="https://github.com/AidanG1/snackRice" target="_blank">View the code on Github</a></h2>
+         </header>
+         <div class="container">
             <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" class="responsive-iframe"
-                    title="YouTube video player"
-                    frameborder="0"
-                    allow="accelerometer; clipboard-write; encrypted-media; gyroscope"
-                    allowfullscreen></iframe>
-        </div>
-    </div>
-</body>
+               title="YouTube video player"
+               frameborder="0"
+               allow="accelerometer; clipboard-write; encrypted-media; gyroscope"
+               allowfullscreen></iframe>
+         </div>
+      </div>
+   </body>
 </html>
