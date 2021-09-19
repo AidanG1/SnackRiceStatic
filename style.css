@@ -106,6 +106,7 @@ html {
 	justify-content: center;
 	text-align: center;
 	margin: auto;
+	overflow: hidden;
   }
   .container {
 	position: relative;
